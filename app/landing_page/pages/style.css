@@ -1,0 +1,122 @@
+@import url('http://fonts.cdnfonts.com/css/amsi-pro-narw-ultra');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --primary-color: #0B62E7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section{
+    width: 99vw;
+    height: 90vh;
+    background: url('../assets/hero_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative
+}
+
+.hero-section > .title-container{
+    position: absolute;
+    left: 8vw;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.hero-section > .title-container h2{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 92px;
+    line-height: .9;
+}
+
+.hero-section > .icon-container{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.hero-section > .logo-container{
+    position: absolute;
+    left: 8vw;
+    top: 100%;
+    transform: translateY(-50%);
+}
+
+.media-section{
+    padding: 128px 64px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.media-section > .text-container{
+    width: 50%;
+}
+
+.media-section > .text-container .title-container{
+    color: var(--primary-color);
+    font-size: 32px;
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.media-section > .text-container .title-container::before{
+    content: '';
+    width: 91px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+    position: absolute;
+    top: -44px;
+}
+
+.media-section > .text-container .paragraph-container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.cards-section > .title-container h2{
+    color: var(--primary-color);
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.cards-section > .title-container span{
+    color: #1E1E1E;
+}
+
+.cards-section > .cards-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards-section > .cards-container .card-item{
+    background-color: red;
+    border-radius: 18px;
+    width: 260px;
+    height: 380px;
+}
+
+.cards-section > ..cards-container .card-item p{
+    color: #FFFFFF;
+}
+
+.cards-section > .cards-container .card-item#graduation{
+    background-image: url('../assets/courses_graduation.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(30%);
+}
