@@ -1,0 +1,400 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.intro-section .background-image img{
+    height: 110vh;
+}
+
+.intro-section > .left-content{
+    position: absolute;
+    left: 5vw;
+    top: 30%;
+    color: #FFFFFF;
+}
+
+.intro-section > .left-content .title-container{
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.intro-section > .left-content .title-container h1::before{
+    content: '';
+    width: 91px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -12px;
+}
+
+.intro-section > .left-content .paragraph-container{
+    font-size: 18px;
+    font-family: 'AmsiPro-Regular', sans-serif;
+    width: 33.333%;
+}
+
+.intro-section > .right-content{
+    display: flex;
+    align-items: center;
+}
+
+.intro-section > .right-content .main-image{
+    border-radius: 24px;
+
+    margin-left: -15%;
+
+    position: relative;
+    overflow: hidden;
+
+    filter: drop-shadow(0px 0px 142px rgba(37, 37, 37, 0.47));
+
+    z-index: 2;
+}
+
+.intro-section > .right-content .main-image:hover .text-container{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.intro-section > .right-content .main-image .text-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E84D9599;
+
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.intro-section > .right-content .main-image .text-container p{
+    font-family: 'AmsiPro-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 0;
+}
+
+.intro-section > .right-content .main-image .text-container h3{
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 44px;
+    line-height: 1;
+
+    margin: 0;
+}
+
+
+.details-section{
+    padding: 64px 48px;
+}
+
+.details-section .box-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: var(--primary-color);
+}
+
+.details-section .box-container .card-container{
+    border: 3px solid var(--primary-color);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 24px 44px;
+}
+
+.details-section .box-container .card-container .icon-container{
+    font-size: 28px;
+}
+
+.details-section .box-container .card-container .text-container{
+    font-family: 'AmsiPro-Regular';
+}
+
+.details-section .box-container .card-container .text-container h3{
+    margin: 0;
+    line-height: 1;
+}
+
+.details-section .box-container .card-container .text-container span{
+    font-family: 'Amsi Pro Narw Ultra';
+    letter-spacing: 1px
+}
+
+.description-section{
+
+}
+
+.description-section > .title-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-section .title-container .title-content{
+    font-family: 'AmsiPro-Bold', sans-serif;
+    color: #181818;
+
+    cursor: pointer;
+}
+
+.description-section .title-container .title-content.active{
+    background-color: #181818;
+    border-radius: 12px 12px 0 0;
+    color: #FFFFFF;
+
+    padding: 0.6rem 3.2rem;
+}
+
+.description-section .content-container{
+    background-color: #181818;
+    color: #FFFFFF;
+
+    margin-top: -1.6%;
+    padding: 64px 112px;
+}
+
+.description-section .content-container .content-item{
+    display: none;
+}
+
+.description-section .content-container .content-item.active{
+    display: block;
+}
+
+.description-section .content-container .content-item.active .title-container{
+    font-family: 'AmsiPro-Bold', sans-serif;
+}
+
+.description-section .content-container .content-item.active .title-container .bold{
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 44px;
+}
+
+.description-section .content-container .content-item.active .description-text{
+    font-family: 'AmsiPro-Regular';
+    width: 60%;
+}
+
+.description-section .content-container .content-item.active .description-text .pre{
+    white-space: pre-line;
+}
+
+.description-section .content-container .content-item.active .description-text ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.description-section .content-container .content-item.active .description-text li{
+    margin-left: -10%;
+}
+
+.description-section .content-container .content-item.active .table-container{
+    border: 4px solid #FFFFFF;
+    border-collapse: collapse;
+    border-radius: 12px;
+
+    font-family: 'AmsiPro-Regular';
+
+    padding: 12px 0;
+    width: 100% ;
+}
+
+.description-section .content-container .content-item.active .table-container thead{
+    text-align: left;
+    font-size: 18px;
+}
+
+.description-section .content-container .content-item.active .table-container tr{
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.description-section .content-container .content-item.active .table-container thead th{
+    padding: 24px 32px;
+}
+
+.description-section .content-container .content-item.active .table-container thead th:not(:nth-last-child(3)){
+    text-align: center;
+}
+
+.description-section .content-container .content-item.active .table-container tbody th,
+.description-section .content-container .content-item.active .table-container tbody td{
+    padding: 18px 32px;
+}
+
+.description-section .content-container .content-item.active .table-container tbody th:not(:first-of-type){
+    padding-top: 44px !important;
+}
+
+.description-section .content-container .content-item.active .table-container tbody td:not(:nth-last-child(3)){
+    text-align: center;
+}
+
+.contact-section{
+    padding: 64px 32px;
+}
+
+.contact-section > .content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 256px;
+}
+
+.contact-section > .content-container .left-content{
+    color: #0B62E7;
+}
+
+.contact-section > .content-container .left-content .first-title-container h3,
+.contact-section > .content-container .left-content .second-title-container h3{
+    font-family: 'AmsiPro-Regular';
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.contact-section > .content-container .left-content .first-title-container h2,
+.contact-section > .content-container .left-content .second-title-container h2{
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 48px;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.contact-section > .content-container .left-content .second-title-container{
+    margin: 54px 0 32px 0;
+    position: relative;
+}
+
+.contact-section > .content-container .left-content .second-title-container::before{
+    background-color: #0B62E7;
+    content: '';
+
+    padding: 2px 3vw;
+
+    position: absolute;
+    top: -20%;
+}
+
+.contact-section > .content-container .left-content .second-title-container p{
+    font-family: 'AmsiPro-Bold';
+    margin: 0;
+}
+
+.contact-section > .content-container .left-content .first-paragraph-container p,
+.contact-section > .content-container .left-content .second-paragraph-container p{
+    font-family: 'AmsiPro-Regular';
+    margin-bottom: 32px;
+}
+
+.contact-section > .content-container .right-content .form-container{
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 14px;
+    box-shadow: 0px 4px 25px 12px rgba(0, 0, 0, 0.1);;
+
+    padding: 32px 24px;
+    width: 30vw;
+
+}
+
+.contact-section > .content-container .right-content .form-container .subtitle{
+    color: #0B62E7;
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    margin-bottom: -44px;
+}
+
+.contact-section > .content-container .right-content .form-container .first-line{
+    color: #1E1E1E;
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+.contact-section > .content-container .right-content .form-container .input-item > input{
+    border: none;
+    border-bottom: 4px solid #0B62E745;
+    outline: none;
+
+    color: #0B62E745;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    padding: 12px 8px;
+
+    width: 100%;
+}
+
+.contact-section > .content-container .right-content .form-container .input-item > input:focus{
+    border-bottom: 4px solid #0B62E7;
+    color: #0B62E7;
+    font-weight: bold;
+    transition: 240ms;
+}
+
+.contact-section > .content-container .right-content .form-container .message-container p{
+    color: #1E1E1E90;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.contact-section > .content-container .right-content .form-container .button-container{
+    margin: 48px 0 24px 0;
+}
+
+.contact-section > .content-container .right-content .form-container .button-container input{
+    background-color: #0B62E7;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding: 18px;
+
+    width: 100%;
+}
+
+.contact-section > .content-container .right-content .form-container .button-container input:hover{
+    background-color: #0c4fb4;
+    transition: 240ms;
+}
