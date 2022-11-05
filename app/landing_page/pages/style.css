@@ -14,56 +14,6 @@ body{
     position: relative
 }
 
-.hero-section > .sidebar-container{
-    position: absolute;
-    left: 5vw;
-    top: 10%;
-
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
-    color: #fff;
-}
-
-.hero-section > .sidebar-container i {
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    transition: 1s;
-}
-
-.hero-section > .sidebar-container i.open,
-.hero-section > .sidebar-container.active i.close{
-    display: block;
-}
-
-.hero-section > .sidebar-container i.close,
-.hero-section > .sidebar-container.active i.open{
-    display: none;
-}
-
-.hero-section > .sidebar-container.active i.close{
-    position: fixed;
-    margin-left: 25vw;
-    z-index: 20000;
-}
-
-.hero-section > .sidebar-container.active p{
-    display: none;
-}
-
-.hero-section > .sidebar-container p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    line-height: 12px;
-}
-
-.hero-section > .sidebar-container b{
-    font-family: 'AmsiPro-Bold', sans-serif;
-    font-size: 18px;
-}
-
 .hero-section > .title-container{
     position: absolute;
     left: 5vw;
@@ -194,7 +144,7 @@ body{
 }
 
 .cards-section > .cards-container .card-item{
-    background-color: red;
+    background-color: #1e1e1e;
     border-radius: 18px;
 
     position: relative;
@@ -403,101 +353,4 @@ body{
 .cta-section > .text-container > .right-content .form-container .button-container input:hover{
     background-color: #0c4fb4;
     transition: 240ms;
-}
-
-.footer-section{
-    background-color: #0B62E7;
-    box-shadow: 0px -24px 29px rgba(11, 98, 231, 0.15);
-    padding: 32px 64px;
-}
-
-.footer-section .footer-container{
-    border-bottom: 1px solid #FFFFFF;
-
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-
-    padding-bottom: 32px;
-}
-
-.footer-section .footer-container div{
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-section .footer-container .logo-box img{
-    width: 50%;
-}
-
-.footer-section .footer-container .title{
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.footer-section .footer-container .links-list{
-    list-style-type: none;
-
-    margin-left: -36px;
-}
-
-.footer-section .footer-container .link-item{
-    margin-bottom: 14px;
-}
-
-.footer-section .footer-container .link-item a{
-    color: #fff;
-    font-weight: 300;
-    font-family: 'Opens Sans', sans-serif;
-    text-decoration: none;
-}
-
-.footer-section .footer-container .fifth-column{
-    gap: 18px;
-}
-
-.footer-section .footer-container .fifth-column button{
-    border: none;
-    border-radius: 4px;
-
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-
-    padding: 10px 24px;
-}
-
-.footer-section .footer-container .fifth-column button.black-button{
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-}
-
-.footer-section .footer-container .fifth-column button.white-button{
-    background-color: #FFFFFF;
-    color: #0B62E7;
-}
-
-.footer-section .rights-container{
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 44px;
-}
-
-.footer-section .rights-container .links-box{
-    display: flex;
-    align-items: center;
-}
-
-.footer-section .rights-container .links-box ul{
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    list-style-type: none;
-}
-
-.footer-section .rights-container .links-box .link-item img{
-    width: 44px;
 }
