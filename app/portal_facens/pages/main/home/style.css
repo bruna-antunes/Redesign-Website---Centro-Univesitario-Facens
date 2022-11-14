@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+  background-color: #F9F9FD;
+  /* background-color: grey; */
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #005C9E;
+  display: block;
+  padding: 25px 5px;
+}
+
+/* Nav-bar */
+
+li a {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+}
+
+nav {
+  background-color: #ffffff;
+  width: 137%;
+  height: 100vh;
+  box-shadow: 2px 0px 4px rgb(0 0 0 / 10%);
+}
+
+.logo-container {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  width: 155px;
+}
+
+.logout {
+  margin-top: 14rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logout a {
+  font-size: 20px;
+}
+
+/* Corpo da home */
+
+#title-container {
+  display: block;
+  position: absolute;
+  left: 65%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  width: 79%;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  padding-left: 1.8rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  width: 73%;
+}
+
+.bell {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 4%;
+  right: 10%;
+}
+
+.fa-regular {
+  font-size: 2rem;
+}
+
+#body-container {
+  left: 25%;
+  top: 116%;
+  transform: translate(-50%, -50%);
+  width: 34rem;
+  position: absolute;
+}
+
+/* Grade do histórico */
+
+.historic-container {
+  background-color: #ffffff;
+  position: absolute;
+  width: 73%;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
+  border-radius: 11px;
+}
+
+.historic-container a {
+  text-align: center;
+}
+
+.img-student {
+  text-align: center;
+}
+
+.img-student img {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.img-student h3 {
+  margin-top: 0.6rem;
+  font-family: 'Poppins', sans-serif;
+  color: #0099F2;
+}
+
+.field-name p {
+  width: 100%;
+  margin-top: -1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subjects {
+  display: grid;
+  grid-gap: 2rem;
+  padding-left: 5rem;
+  margin-top: 1.5rem;
+}
+
+.subjects span {
+  border-bottom: inset;
+  width: 74%;
+}
+
+/* Grades de faltas */
+
+.faults-container {
+  background-color: #ffffff;
+  position: absolute;
+  width: 70%;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
+  border-radius: 11px;
+  left: 80%;
+}
+
+.faults-container hr {
+  color: #000000;
+  width: 21rem;
+}
+
+.faults-container a {
+  text-align: center;
+}
+
+.subjects-faults {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.subjects-faults span {
+  padding-left: 1.8rem;
+}
+
+.view-history {
+  margin-bottom: 0.8rem;
+}
+
+.view-history a {
+  margin-top: 0.4rem;
+}
+
+/* Grades de notas */
+
+.grades-container {
+  background-color: #ffffff;
+  position: absolute;
+  width: 150%;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
+  border-radius: 11px;
+  top: 38rem;
+}
+
+table {
+  width: 96%;
+  border-collapse: collapse;
+}
+
+.nbsp {
+  border: none;
+}
+
+th {
+  border: groove 1px;
+  border-top: none;
+}
+
+tr {
+  border-right: solid;
+  border-left: solid;
+  border-color: #ffffff;
+  height: 2rem;
+}
+
+td {
+  border: solid 1px groove;
+  text-align: center;
+  border: groove 1px;
+  height: 3rem;
+  width: 10%;
+}
+
+.materia {
+  border-top: none;
+  border-bottom: groove 1px;
+  width: 36%;
+}
+
+.view-more {
+  text-align: end;
+  padding-right: 3rem;
+}
