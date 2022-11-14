@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: #005C9E;
   padding: 25px 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Nav-bar */
@@ -23,10 +26,12 @@ a {
   display: flex;
   padding: 5px;
   border: none;
+  font-family: 'Poppins', sans-serif;
   background-color: transparent;
   cursor: pointer;
   padding-left: 1rem;
   padding: 1rem;
+  font-weight: bold;
 }
 
 #sub-title {
@@ -35,6 +40,9 @@ a {
   display: grid;
   padding-left: 1.5rem;
   grid-gap: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 #btn-title:active {
@@ -62,7 +70,7 @@ nav {
 
 .nav-title {
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin-top: 2rem;
 }
 
@@ -88,6 +96,9 @@ img {
   position: absolute;
   left: 50%;
   top: 89%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 /* Corpo da home */
@@ -95,7 +106,7 @@ img {
 #title-container {
   display: block;
   position: absolute;
-  left: 60%;
+  left: 62%;
   top: 15%;
   transform: translate(-50%, -50%);
   width: 79%;
@@ -176,13 +187,16 @@ p {
 .subjects {
   display: grid;
   grid-gap: 2rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
   margin-top: 1.5rem;
 }
 
 .subjects span {
   border-bottom: inset;
   width: 74%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Grades de faltas */
@@ -203,7 +217,7 @@ p {
 
 .faults-container a {
   text-align: center;
-   display: block;
+  display: block;
 }
 
 .subjects-faults {
@@ -213,6 +227,21 @@ p {
 
 .subjects-faults span {
   padding-left: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.block-faults {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-faults #faults {
+  padding-right: 2rem;
+  color: #888888;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 
 .view-history {
@@ -231,7 +260,7 @@ p {
   width: 150%;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
   border-radius: 11px;
-  top: 38rem;
+  top: 39rem;
 }
 
 .grades-container a {
@@ -250,6 +279,9 @@ table {
 th {
   border: groove 1px;
   border-top: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 tr {
@@ -265,12 +297,22 @@ td {
   border: groove 1px;
   height: 3rem;
   width: 10%;
+  color: #888888;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .materia {
   border-top: none;
   border-bottom: groove 1px;
   width: 36%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  text-align: inherit;
+  padding-left: 1rem;
 }
 
 .view-more {

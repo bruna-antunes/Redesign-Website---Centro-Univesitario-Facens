@@ -21,19 +21,19 @@
       </div>
 
       <div class="nav-title">
-          <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
-            <div id="sub-title" style="display: none;">
-              <a href="#">Dados pessoais</a>
-              <a href="#">Histórico</a>
-              <a href="#">Notas / Faltas</a>
-              <a href="#">Notas de avaliações</a>
-              <a href="#">Ativ.currículares</a>
-              <a href="#">Matrícula on-line</a>
-              <a href="#">Solicitações</a>
-            </div>
-          
-          <button>Suporte</button>
-          <button>Ferramentas</button>
+        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+        <div id="sub-title" style="display: none;">
+          <a href="#">Dados pessoais</a>
+          <a href="#">Histórico</a>
+          <a href="#">Notas / Faltas</a>
+          <a href="#">Notas de avaliações</a>
+          <a href="#">Ativ.currículares</a>
+          <a href="#">Matrícula on-line</a>
+          <a href="#">Solicitações</a>
+        </div>
+
+        <button>Suporte</button>
+        <button>Ferramentas</button>
       </div>
 
       <div class="logout">
@@ -79,17 +79,40 @@
       <div class="faults-container">
         <h2>Faltas</h2>
         <div class="subjects-faults">
-          <span>Web Design</span>
+          <div class="block-faults">
+            <span>Web Design</span>
+            <span id="faults">2/20</span>
+          </div>
           <hr>
-          <span>Programação Orientada a Objetos</span>
+
+          <div class="block-faults">
+            <span>Programação Orientada a Objetos</span>
+            <span id="faults">8/20</span>
+          </div>
           <hr>
-          <span>Banco de dados</span>
+
+          <div class="block-faults">
+            <span>Banco de dados</span>
+            <span id="faults">00/20</span>
+          </div>
           <hr>
-          <span>Construção de Ambientes Virtuais</span>
+
+          <div class="block-faults">
+            <span>Construção de Ambientes Virtuais</span>
+            <span id="faults">10/20</span>
+          </div>
           <hr>
-          <span>Inteligência de Negócios</span>
+
+          <div class="block-faults">
+            <span>Inteligência de Negócios</span>
+            <span id="faults">00/20</span>
+          </div>
           <hr>
-          <span>UPX - Engenharia Contemporânea</span>
+
+          <div class="block-faults">
+            <span>UPX - Engenharia Contemporânea</span>
+            <span id="faults">04/20</span>
+          </div>
           <hr>
         </div>
         <a href="#">Justificar ausência</a>
@@ -126,7 +149,7 @@
             <td>-</td>
           </tr>
           <tr>
-            <td  class="materia">Banco de dados</td>
+            <td class="materia">Banco de dados</td>
             <td>7,59</td>
             <td>-</td>
             <td>-</td>
@@ -135,7 +158,7 @@
             <td>-</td>
           </tr>
           <tr>
-            <td  class="materia">Construção de Ambientes Virtuais</td>
+            <td class="materia">Construção de Ambientes Virtuais</td>
             <td>5,38 </td>
             <td>-</td>
             <td>-</td>
