@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.intro-section .background-image img{
+    height: 110vh;
+}
+
+.intro-section > .left-content{
+    position: absolute;
+    left: 5vw;
+    top: 30%;
+    color: #FFFFFF;
+}
+
+.intro-section > .left-content .title-container{
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.intro-section > .left-content .title-container h1::before{
+    content: '';
+    width: 91px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -12px;
+}
+
+.intro-section > .left-content .paragraph-container{
+    font-size: 18px;
+    font-family: 'AmsiPro-Regular', sans-serif;
+    width: 33.333%;
+}
+
+.intro-section > .right-content{
+    display: flex;
+    align-items: center;
+}
+
+.intro-section > .right-content img{
+    border-radius: 24px;
+    filter: drop-shadow(0px 0px 142px rgba(37, 37, 37, 0.47));
+}
+
+.intro-section > .right-content .main-image{
+    z-index: 2;
+}
+
+.intro-section > .right-content .main-image img{
+    width: 350px;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+.intro-section > .right-content .secondary-image img{
+    width: 250px;
+    height: 350px;
+    margin-left: -15%;
+
+    object-fit: cover;
+    z-index: -1;
+}
+
+.accesses-section{
+    padding: 6.4rem 4.8rem;
+}
+
+.accesses-section .title-container h2{
+    font-family: 'AmsiPro-Bold', sans-serif;
+    font-size: 32px;
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.accesses-section .accesses-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+    justify-content: space-evenly;
+
+    row-gap: 18px;
+}
+
+.accesses-section .accesses-container .access-box{
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    box-shadow: 0 0 6px #00000029;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    text-decoration: none;
+
+    width: 240px;
+    height: 240px;
+}
+
+.accesses-section .accesses-container .access-box .access-logo img{
+    width: 91px;
+}
+
+.accesses-section .accesses-container .access-box .access-name h3{
+    color: var(--primary-color);
+    font-family: 'AmsiPro-Regular', sans-serif;
+
+    font-size: 18px;
+
+    text-transform: uppercase;
+
+    margin: 12px;
+}
