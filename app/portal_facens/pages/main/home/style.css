@@ -21,7 +21,7 @@ a {
 /* Nav-bar */
 
 .nav-title button {
-  font-size: 20px;
+  font-size: 17px;
   color: #005C9E;
   display: flex;
   padding: 5px;
@@ -106,7 +106,7 @@ img {
 #title-container {
   display: block;
   position: absolute;
-  left: 62%;
+  left: 60%;
   top: 15%;
   transform: translate(-50%, -50%);
   width: 79%;
