@@ -108,6 +108,8 @@ body{
     justify-content: center;
     gap: 18px;
 
+    text-decoration: none;
+
     width: 240px;
     height: 240px;
 }
