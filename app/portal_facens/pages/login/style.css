@@ -91,6 +91,11 @@ button {
   margin-bottom: 2rem;
 }
 
+button a {
+  text-decoration: none;
+  color: white;
+}
+
 button:hover {
   background-color: #054574f1;
 }
