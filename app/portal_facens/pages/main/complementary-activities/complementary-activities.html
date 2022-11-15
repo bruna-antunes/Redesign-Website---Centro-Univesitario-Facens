@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Complementares - Portal Acadêmico</title>
+    <script src="../scripts/general.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="complementary-activities.css">
+    <link rel="stylesheet" href="../css/general.css">
+</head>
+
+<body>
+    <div style="position: fixed;">
+        <nav>
+            <div class="logo-container">
+                <a href="../home/home.html">
+                    <img src="../../../assets/logo-facens.png" alt="Logo-Facens">
+                </a>
+            </div>
+
+            <div class="nav-title">
+                <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+                <div id="sub-title" style="display: none;">
+                    <a href="#">Dados pessoais</a>
+                    <a href="#">Histórico</a>
+                    <a href="#">Notas / Faltas</a>
+                    <a href="#">Notas de avaliações</a>
+                    <a href="#" class="active">Ativ.currículares</a>
+                    <a href="#">Matrícula on-line</a>
+                    <a href="#">Solicitações</a>
+                </div>
+
+                <button>Suporte</button>
+                <button>Ferramentas</button>
+            </div>
+
+            <div class="logout">
+                <a href="../../login/index.html">Sair</a>
+            </div>
+        </nav>
+    </div>
+    <div class="body-content">
+        <div class="header-container">
+            <h2>Olá, Bruna</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum
+                laborum
+                eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+        </div>
+        <div class="bell">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="notifications-container">
+            <ul>
+                <li>
+                    <div class="title-container">
+                        <h4>Boas Noticias, Bruna!</h4>
+                        <p>4d</p>
+                    </div>
+                    Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+                </li>
+                <li>
+                    <div class="title-container">
+                        <h4>Boas Noticias, Bruna!</h4>
+                        <p>4d</p>
+                    </div>
+                    Houve uma alteração em suas notas em Programação Orientada a Objetos
+                </li>
+                <li>
+                    <div class="title-container">
+                        <h4>Bruna, sentimos sua falta!</h4>
+                        <p>9d</p>
+                    </div>
+                    Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se
+                    você acha que isso é um erro, <u>clique aqui</u>!
+                </li>
+                <li>
+                    <div class="title-container">
+                        <h4>Fique de olho nessa!</h4>
+                        <p>20d</p>
+                    </div>
+                    O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de
+                    Novembro!
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2 class="title-container">Atividades Curriculares</h2>
+            <table class="table-container">
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Descrições</th>
+                        <th>Data Inicial</th>
+                        <th>Data Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Horas Complementares</td>
+                        <td>Plugin Inovação 2022</td>
+                        <td>18/05/2022</td>
+                        <td>20/05/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Horas Complementares</td>
+                        <td>Atividades Externas Complementares 2022S1 - Engenharias</td>
+                        <td>01/01/2022</td>
+                        <td>30/06/2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
