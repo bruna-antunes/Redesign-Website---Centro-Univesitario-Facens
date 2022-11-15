@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
   background-color: #F9F9FD;
-  /* background-color: grey; */
   padding: 0px;
   margin: 0px;
   overflow-x: hidden;
@@ -14,24 +13,26 @@ a {
   color: #005C9E;
   padding: 25px 5px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
 }
 
 /* Nav-bar */
 
 .nav-title button {
-  font-size: 17px;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
   color: #005C9E;
   display: flex;
-  padding: 5px;
-  border: none;
   font-family: 'Poppins', sans-serif;
-  background-color: transparent;
-  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+
   padding-left: 1rem;
   padding: 1rem;
-  font-weight: bold;
 }
 
 #sub-title {
@@ -114,14 +115,17 @@ img {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  color: #2F2F2FD6;
+  font-family: 'Open Sans', sans-serif;
   font-size: 34px;
-  padding-left: 1.8rem;
+  margin: 8px 0;
 }
 
 p {
+  color: #1E1E1E;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
   width: 73%;
 }
 
@@ -150,7 +154,7 @@ p {
 .historic-container {
   background-color: #ffffff;
   position: absolute;
-  width: 73%;
+  width: 65%;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
   border-radius: 11px;
 }
@@ -165,11 +169,14 @@ p {
 }
 
 .img-student img {
-  height: 6rem;
-  width: 6rem;
+  height: 81px;
+  width: 81px;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+
+  border: 4px solid #0099F2;
+  border-radius: 50%;
 }
 
 .img-student h3 {
@@ -182,42 +189,59 @@ p {
   width: 100%;
   margin-top: -1rem;
   font-family: 'Poppins', sans-serif;
+  color: #BABABA;
 }
 
 .subjects {
   display: grid;
   grid-gap: 2rem;
-  padding-left: 4rem;
   margin-top: 1.5rem;
+  width: 90%;
+
+  padding: 0 12px;
 }
 
 .subjects span {
   border-bottom: inset;
-  width: 74%;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
+  color: #2F2F2F;
 }
 
 /* Grades de faltas */
 
 .faults-container {
   background-color: #ffffff;
-  position: absolute;
-  width: 70%;
-  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
   border-radius: 11px;
-  left: 80%;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
+
+  position: absolute;
+  left: 66%;
+
+  padding: 0 12px;
+  width: 65%;
+  height: 578px;
+}
+
+.faults-container h2{
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 28px;
+
+  padding: 18px 0;
 }
 
 .faults-container hr {
   color: #000000;
-  width: 21rem;
+  width: 100%;
 }
 
 .faults-container a {
   text-align: center;
   display: block;
+  font-weight: 600;
 }
 
 .subjects-faults {
@@ -226,9 +250,9 @@ p {
 }
 
 .subjects-faults span {
-  padding-left: 1.8rem;
+  color: #2F2F2FD6;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -237,11 +261,13 @@ p {
   justify-content: space-between;
 }
 
-.block-faults #faults {
-  padding-right: 2rem;
+.block-faults .faults {
   color: #888888;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
+  font-weight: 400;
+
+  padding-right: 2rem;
 }
 
 .view-history {
@@ -249,6 +275,9 @@ p {
 }
 
 .view-history a {
+  font-weight: 600;
+  font-size: 14px;
+
   margin-top: 0.4rem;
 }
 
@@ -257,10 +286,18 @@ p {
 .grades-container {
   background-color: #ffffff;
   position: absolute;
-  width: 150%;
+  width: 135%;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
   border-radius: 11px;
-  top: 39rem;
+  top: 37rem;
+}
+
+.grades-container h2{
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 28px;
+
+  padding: 12px;
 }
 
 .grades-container a {
