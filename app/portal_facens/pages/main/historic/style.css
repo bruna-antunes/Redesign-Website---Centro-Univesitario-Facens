@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+  /* background-color: #F9F9FD; */
+  background-color: grey;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #005C9E;
+  padding: 25px 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Nav-bar */
+
+.nav-title button {
+  font-size: 17px;
+  color: #005C9E;
+  display: flex;
+  padding: 5px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#sub-title {
+  display: none;
+  margin-top: -1rem;
+  display: grid;
+  padding-left: 1.5rem;
+  grid-gap: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#btn-title:active {
+  background-color: #005C9E;
+  color: #ffffff;
+}
+
+#sub-title a {
+  color: #005C9E;
+  cursor: pointer;
+  display: grid;
+  padding: 0.4rem;
+}
+
+#sub-title a:target {
+  color: black;
+}
+
+nav {
+  background-color: #ffffff;
+  width: 137%;
+  height: 100vh;
+  box-shadow: 2px 0px 4px rgb(0 0 0 / 10%);
+}
+
+.nav-title {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.logo-container {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  width: 155px;
+}
+
+.logout {
+  display: block;
+  margin-top: 14rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logout a {
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 89%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Corpo do histórico */
+
+#historic-body {
+  display: block;
+  position: absolute;
+  left: 60%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  width: 79%;
+  z-index: -1;
+}
+
+#historic-container {
+  left: 25%;
+  top: 116%;
+  transform: translate(-50%, -50%);
+  width: 34rem;
+  position: absolute;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+  padding-left: 1.8rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  width: 73%;
+}
+
+.bell {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 4%;
+  right: 10%;
+}
+
+.bell .fa-regular {
+  font-size: 2rem;
+}
+
+/* Histórico acadêmico */
+
+.semester-grid {
+  background-color: #ffffff;
+  position: absolute;
+  width: 173%;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
+  border-radius: 11px;
+}
+
+.first-semester {
+  margin: 1rem;
+}
+
+.history-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-grid .classes {
+  padding-left: 5rem;
+}
+
+.history-grid .situation {
+  padding-right: 2rem;
+}
+
+.subjects {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subjects .classes-results {
+  padding-left: 1rem;
+}
+
+.subjects .situation-results {
+  margin-right: 0.4rem;
+  border: 1px solid transparent;
+  text-align: center;
+  width: 10%;
+  border-radius: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #71FF76;
+}

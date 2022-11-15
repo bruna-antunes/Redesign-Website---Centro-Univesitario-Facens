@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <a href="../../main/home/home.html"><img src="../../../assets/logo-facens.png" alt="Logo-Facens"></a>
+      </div>
+      <div class="nav-title">
+        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+        <div id="sub-title" style="display: none;">
+          <a href="#">Dados pessoais</a>
+          <a href="../../main/historic/historic.html">Histórico</a>
+          <a href="#">Notas / Faltas</a>
+          <a href="#">Notas de avaliações</a>
+          <a href="#">Ativ.currículares</a>
+          <a href="#">Matrícula on-line</a>
+          <a href="#">Solicitações</a>
+        </div>
+
+        <button>Suporte</button>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="historic-body">
+    <div>
+      <h2>Histórico</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum laborum
+        eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+    </div>
+    <div class="bell">
+      <i class="fa-regular fa-bell"></i>
+    </div>
+    <div id="historic-container">
+      <div class="semester-grid">
+        <h3>Eng. de Computação - 2022S1</h3>
+
+        <div class="first-semester">
+          <div class="history-grid">
+            <span>Disciplinas</span>
+            <span class="classes">Turmas</span>
+            <span class="situation">Situação</span>
+          </div>
+
+          <div class="subjects">
+            <span>Programação Estruturada</span>
+            <span class="classes-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>Fenômenos Elétricos</span>
+            <span class="classes-results" style="padding-left: 2.7rem;">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>UPx-Engenharia Criativa</span>
+            <span class="classes-results">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+          <div class="subjects">
+            <span>Programação e IoT</span>
+            <span class="classes-results" style="padding-left: 3.6rem;">CPITN02</span>
+            <span class="situation-results">Aprovado</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
