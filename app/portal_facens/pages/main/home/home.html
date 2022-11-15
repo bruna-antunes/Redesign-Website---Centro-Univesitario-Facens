@@ -49,7 +49,39 @@
         eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
     </div>
     <div class="bell">
-      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    <div class="notifications-container">
+      <ul>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas em Programação Orientada a Objetos
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Bruna, sentimos sua falta!</h4>
+            <p>9d</p>
+          </div>
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha que isso é um erro, <u>clique aqui</u>!
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Fique de olho nessa!</h4>
+            <p>20d</p>
+          </div>
+          O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de Novembro!
+        </li>
+      </ul>
     </div>
 
     <div id="body-container">
@@ -133,7 +165,7 @@
           <tr>
             <td class="materia">Web Design</td>
             <td>10</td>
-            <td>-</td>
+            <td>10</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
@@ -169,6 +201,134 @@
         </table>
 
         <a class="view-more" href="#">Ver mais </a>
+      </div>
+
+      <div class="schedule-container">
+        <h2>Agenda</h2>
+        <div class="calendar-container">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                <label id="currentMonthLabel"></label> <span style="font-size:18px" id="currentYearLabel"></span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Seg</li>
+            <li>Ter</li>
+            <li>Qua</li>
+            <li>Qui</li>
+            <li>Sex</li>
+            <li>Sab</li>
+            <li>Dom</li>
+          </ul>
+
+          <ul class="days">
+            <li><span class="not-current-month">31</span></li>
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+            <li><span>9</span></li>
+            <li><span>10</span></li>
+            <li><span>11</span></li>
+            <li><span>12</span></li>
+            <li><span>13</span></li>
+            <li><span>14</span></li>
+            <li><span>15</span></li>
+            <li><span>16</span></li>
+            <li><span>17</span></li>
+            <li><span>18</span></li>
+            <li><span>19</span></li>
+            <li><span>20</span></li>
+            <li><span>21</span></li>
+            <li><span class="active">22</span></li>
+            <li><span>23</span></li>
+            <li><span>24</span></li>
+            <li><span>25</span></li>
+            <li><span>26</span></li>
+            <li><span>27</span></li>
+            <li><span>28</span></li>
+            <li><span>29</span></li>
+            <li><span>30</span></li>
+            <li><span class="not-current-month">1</span></li>
+            <li><span class="not-current-month">2</span></li>
+            <li><span class="not-current-month">3</span></li>
+            <li><span class="not-current-month">4</span></li>
+          </ul>
+        </div>
+        <div class="messages-container">
+          <div class="container">
+            <!-- completed -->
+            <div class="step completed">
+                <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP116TIN2 - PROGRAMAÇÃO ESTRUTURADA TAREFA</p>
+                  <h3>Avaliação dos 300 - alunos que fizeram a PROVA</h3>
+                </div>
+            </div>
+
+            <!-- active -->
+            <div class="step completed">
+              <!-- <div class="date">
+                14/09/2022
+                07:13AM
+              </div> -->
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content">
+                <p>CP410TIN3 - BANCO DE DADOS TAREFA</p>
+                <h3>AC2: Atividade Prática - Triggers</h3>
+              </div>
+            </div>
+
+            <div class="step active">
+              <!-- <div class="date">
+                14/09/2022
+                07:13AM
+              </div> -->
+              <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP100TIN2 - WEB DESIGN</p>
+                  <h3>AC2 - Entrega do Projeto Final</h3>
+                </div>
+            </div>
+            <div class="step">
+                <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP410TIN3 - BANCO DE DADOS TAREFA</p>
+                  <h3>AC2 - Seminários Sobre Tópicos Emergentes em Banco de Dados</h3>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="link-container">
+          <a href="#">Ver Mais</a>
+        </div>
       </div>
 
     </div>

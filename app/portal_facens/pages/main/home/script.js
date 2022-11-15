@@ -13,3 +13,19 @@ function openSub() {
     btn.style.borderRight = '';
   }
 }
+
+const listaMeses = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+
+const dataAtual = new Date();
+let mesAtual = listaMeses[dataAtual.getMonth()];
+let anoAtual = dataAtual.getFullYear();
+
+document.getElementById("currentMonthLabel").innerHTML = mesAtual;
+document.getElementById("currentYearLabel").innerHTML = anoAtual;
+
+let notificationToggle = document.querySelector('.bell');
+let notificationContainer = document.querySelector('.notifications-container');
+
+notificationToggle.onclick = function(){
+  notificationContainer.classList.toggle('active');
+}
