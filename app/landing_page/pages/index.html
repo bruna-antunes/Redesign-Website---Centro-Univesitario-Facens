@@ -8,9 +8,64 @@
     <title>Centro Universitário Facens</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="../scripts/general.js" defer></script>
 </head>
 <body>
+    <section class="navigation">
+        <div class="logo-container">
+            <img src="../assets/logo_facens_rgb.png" alt="Logo Centro Universitário Facens">
+        </div>
+        <ul>
+            <li class="nav-list-item active">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa-regular fa-house"></i>
+                    </span>
+                    <span class="title">Página Inicial</span>
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa-regular fa-clipboard-list"></i>
+                    </span>
+                    <span class="title">Formas de Entrada</span>
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="graduation/list-graduation/list-graduation.html">
+                    <span class="icon">
+                        <i class="fa-regular fa-books"></i>
+                    </span>
+                    <span class="title">Cursos</span>
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa-solid fa-atom-simple"></i>
+                    </span>
+                    <span class="title">Inovação</span>
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="./accesses/accesses.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </span>
+                    <span class="title">Acessos</span>
+                </a>
+            </li>
+        </ul>
+    </section>
     <section class="hero-section">
+        <div class="sidebar-container">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+            <p>Você está na<br><b>Página Inicial</b></p>
+        </div>
         <div class="title-container">
             <h2>Facens<br>Inspirando<br>Inovação</h2>
         </div>
@@ -28,9 +83,11 @@
             </div>
             <div class="paragraph-container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil autem error velit provident ducimus facilis exercitationem minus tenetur cupiditate sapiente sed corporis laboriosam aspernatur repellendus, incidunt tempora. Facere, expedita non?</p>
+                <a href="#information-section" >Saiba Mais</a>
             </div>
         </div>
         <div class="media-container">
+            <h1>Amplie suas Habilidades</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qnfjfVlKqzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
@@ -39,16 +96,156 @@
             <h2>Escolha a opção que combina <br> com o <span>seu momento</span>!</h2>
         </div>
         <div class="cards-container">
-            <a class="card-item" id="graduation">
-                <p>Graduação</p>       
+            <a class="card-item" href="graduation/list-graduation/list-graduation.html">
+                <p>Graduação</p>
+                <img src="../assets/courses_graduation.jpg">
             </a>
-            <a class="card-item" id="post-graduation">
-                <p>Pós-Graduação<br>e MBA</p>   
+            <a class="card-item"   href="#">
+                <p>Pós-Graduação<br>e MBA</p>
+                <img src="../assets/courses_post-graduation.jpg">
             </a>
-            <a class="card-item" id="ncursos">
-                <p>Cursos de<br>extensão livre</p>       
+            <a class="card-item" href="https://www.ncursosedu.com.br/main/inicio">
+                <p>Cursos de<br>extensão livre</p>
+                <img src="../assets/courses_ncursos.jpg">
             </a>
         </div>
+    </section>
+    <section class="information-section" id="information-section">
+        <div class="title-container">
+            <h2>46 Anos preparando cidadãos preparados para a vida</h2>
+        </div>
+        <div class="box-container">
+            <div class="box-item">
+                <div class="box-title">
+                    <h3>Estrutura</h3>
+                </div>
+                <div class="box-description">
+                    <p>Mais de 100 mil m², 50 laboratórios especializados e mais de 10 centros de inovação.</p>
+                </div>
+            </div>
+            <div class="box-item">
+                <div class="box-title">
+                    <h3>Cursos</h3>
+                </div>
+                <div class="box-description">
+                    <p>4 Áreas e 18 cursos disponíveis ENTRE Engenharias, Arquitetura Tecnológicos e Saúde</p>
+                </div>
+            </div>
+            <div class="box-item">
+                <div class="box-title">
+                    <h3>Smart Campus</h3>
+                </div>
+                <div class="box-description">
+                    <p>Somos reconhecidos internacionalmente como um Campus Inteligente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="text-container">
+            <div class="left-content">
+                <div class="title-container">
+                    Lorem ipsum <br> dolor <span>sit amet</span>
+                </div>
+                <div class="text-container">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id debitis consectetur vel non aut perferendis nam nemo rem quis perspiciatis nobis sequi aperiam laboriosam fugit repellat dignissimos beatae, accusamus ab.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id debitis consectetur vel non aut perferendis nam nemo rem quis perspiciatis nobis sequi aperiam laboriosam fugit repellat dignissimos beatae, accusamus ab.
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="form-container">
+                    <div class="title-container">
+                        <h4 class="subtitle">Lorem ipsum</h4>
+                        <h3 class="first-line">Lorem Ipsum dolor sit amet,</h3>
+                    </div>
+                    <form action="#">
+                        <div class="input-item">
+                            <input type="text" placeholder="Digite seu nome..">
+                        </div>
+                        <div class="input-item">
+                            <input type="text" placeholder="Digite seu número de telefone..">
+                        </div>
+                    </form>
+                    <div class="message-container">
+                        <p>Não usaremos suas informações de contato para enviar qualquer tipo de SPAM.</p>
+                    </div>
+                    <div class="button-container">
+                        <input type="button" value="Receber Novidades">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <footer>
+            <div class="footer-container">
+                <div class="first-column">
+                    <div class="logo-box">
+                        <img src="../assets/logo_facens.png" alt="Logotipo Centro Universitário Facens">
+                    </div>
+                </div>
+                <div class="second-column">
+                    <h2 class="title">Formas de Entrada</h2>
+                    <ul class="links-list">
+                        <li class="link-item"><a href="#">Vestibular Facens</a></li>
+                        <li class="link-item"><a href="#">Vestibular Enem</a></li>
+                        <li class="link-item"><a href="#">Bolsas e Financiamento</a></li>
+                    </ul>
+                </div>
+                <div class="third-column">
+                    <h2 class="title">Cursos</h2>
+                    <ul class="links-list">
+                        <li class="link-item"><a href="./graduation/list-graduation/list-graduation.html">Graduação</a></li>
+                        <li class="link-item"><a href="#">Pós Graduação</a></li>
+                        <li class="link-item"><a href="#">Extensão e Livres</a></li>
+                    </ul>
+                </div>
+                <div class="fourth-column">
+                    <h2 class="title">Acessos</h2>
+                    <ul class="links-list">
+                        <li class="link-item"><a href="#">Canvas</a></li>
+                        <li class="link-item"><a href="#">Calendário Acadêmico</a></li>
+                        <li class="link-item"><a href="#">Acesso Acadêmico</a></li>
+                        <li class="link-item"><a href="#">Acesso Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="fifth-column">
+                    <a class="black-button" href="#">Inscrever-me</a>
+                    <a class="white-button" href="../../portal_facens/pages/login/index.html">Área do Aluno</a>
+                </div>
+            </div>
+            <div class="rights-container">
+                <div class="rights-box">
+                    <p>&copy; Centro Universitário Facens <label id="currentYearLabel"></label> | Todos os Direitos Reservados</p>
+                </div>
+                <div class="links-box">
+                    <p>Siga-nos: </p>
+                    <ul>
+                        <li class="link-item">
+                            <a href="https://www.facebook.com/facens">
+                                <img src="../assets/facebook_icon.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.instagram.com/instafacens/">
+                                <img src="../assets/instagram_icon.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://web.whatsapp.com/send?phone=+5515981547777&text=Olá%2C+gostaria+de+mais+informações+sobre+a+Facens%3F">
+                                <img src="../assets/whatsapp_icon.png" alt="whatsapp">
+                            </a>
+                        </li>
+                        <li class="link-item">
+                            <a href="https://www.youtube.com/c/FacensPlay1">
+                                <img src="../assets/youtube_icon.png" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </section>
 </body>
 </html>

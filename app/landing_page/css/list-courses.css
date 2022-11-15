@@ -1,0 +1,205 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.intro-section .background-image img{
+    height: 110vh;
+}
+
+.intro-section > .left-content{
+    position: absolute;
+    left: 5vw;
+    top: 30%;
+    color: #FFFFFF;
+}
+
+.intro-section > .left-content .title-container{
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.intro-section > .left-content .title-container h1::before{
+    content: '';
+    width: 91px;
+    height: 24px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -12px;
+}
+
+.intro-section > .left-content .paragraph-container{
+    font-size: 18px;
+    font-family: 'AmsiPro-Regular', sans-serif;
+    width: 33.333%;
+}
+
+.intro-section > .right-content{
+    display: flex;
+    align-items: center;
+}
+
+.intro-section > .right-content img{
+    border-radius: 24px;
+    filter: drop-shadow(0px 0px 142px rgba(37, 37, 37, 0.47));
+}
+
+.intro-section > .right-content .main-image{
+    z-index: 2;
+}
+
+.intro-section > .right-content .main-image img{
+    width: 350px;
+    height: 450px;
+
+    object-fit: cover;
+}
+
+
+.intro-section > .right-content .secondary-image img{
+    width: 250px;
+    height: 350px;
+    margin-left: -15%;
+
+    object-fit: cover;
+    z-index: -1;
+}
+
+.list-courses-section{
+    padding: -32px 54px;
+    margin-bottom: 128px;
+}
+
+.list-courses-section  .courses-container{
+    padding: 32px 54px;
+    margin-top: -8%;
+    position: relative;
+}
+
+.list-courses-section > .courses-container .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.list-courses-section > .courses-container .row .card-box{
+    background-color: #1e1e1e;
+    border-radius: 18px;
+
+    position: relative;
+    overflow: hidden;
+
+    height: 420px;
+    width: 260px;
+
+    z-index: 2;
+}
+
+.list-courses-section > .courses-container .row .card-box .text-container{
+    position: absolute;
+    bottom: 32px;
+
+    margin: 0 18px;
+
+    z-index: 2000;
+}
+
+.list-courses-section > .courses-container .row .card-box h2{
+    color: #FFFFFF;
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+.list-courses-section > .courses-container .row .card-box .subtitle{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'AmsiPro-Light', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: -18px;
+}
+
+.list-courses-section > .courses-container .row .card-box .cta{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'AmsiPro-Light', sans-serif;
+    text-transform: uppercase;
+
+    display: none;
+}
+
+.list-courses-section > .courses-container .row .card-box:hover .cta{
+    display: block;
+
+    transition: 2s;
+}
+
+.list-courses-section > .courses-container .card-box .card-item img{
+    height: 420px;
+    width: 260px;
+
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.list-courses-section > .courses-container .background-image{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    z-index: -1;
+}
+
+.list-courses-section > .courses-container .title-container{
+    z-index: 10000;
+}
+
+.list-courses-section > .courses-container .title-container h2{
+    color: #FFFFFF;
+    font-family: 'Amsi Pro Narw Ultra';
+    font-size: 33px;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 212px;
+    position: relative;
+}
+
+.list-courses-section > .courses-container .title-container.left-aligned h2{
+    text-align: left;
+    color: #0B62E7;
+    position: relative;
+}
+
+.list-courses-section > .courses-container .title-container h2::before{
+    content: '';
+    width: 91px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -32px;
+    right: 0;
+}
+
+.list-courses-section > .courses-container .title-container.left-aligned h2::before{
+    content: '';
+    width: 91px;
+    height: 20px;
+    background-color: #0B62E7;
+    border-radius: 8px;
+
+    position: absolute;
+    top: -32px;
+    left: 0;
+}

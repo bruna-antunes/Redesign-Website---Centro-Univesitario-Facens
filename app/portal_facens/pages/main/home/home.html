@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/general.css">
+  <script src="script.js" defer></script>
+  <script src="../scripts/general.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Página Inicial - Portal Acadêmico Facens</title>
+</head>
+
+<body>
+  <div style="position: fixed;">
+    <nav>
+      <div class="logo-container">
+        <img src="../../../assets/logo-facens.png" alt="Logo-Facens">
+      </div>
+
+      <div class="nav-title">
+        <button onclick="openSub()" id="btn-title">Portal Acadêmico</button>
+        <div id="sub-title" style="display: none;">
+          <a href="#">Dados pessoais</a>
+          <a href="#">Histórico</a>
+          <a href="#">Notas / Faltas</a>
+          <a href="#">Notas de avaliações</a>
+          <a href="../complementary-activities/complementary-activities.html">Ativ.currículares</a>
+          <a href="#">Matrícula on-line</a>
+          <a href="#">Solicitações</a>
+        </div>
+
+        <button>Suporte</button>
+        <button>Ferramentas</button>
+      </div>
+
+      <div class="logout">
+        <a href="../../login/index.html">Sair</a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="title-container">
+    <div>
+      <h2>Olá, Bruna</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos alias, ea ab suscipit illum cum laborum
+        eveniet ullam adipisci officia doloribus amet? Beatae iste perspiciatis id mollitia nisi omnis.</p>
+    </div>
+    <div class="bell">
+      <i class="fa-solid fa-bell"></i>
+    </div>
+    <div class="notifications-container">
+      <ul>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas de Web Design, e outras 2 disciplinas
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Boas Noticias, Bruna!</h4>
+            <p>4d</p>
+          </div>
+          Houve uma alteração em suas notas em Programação Orientada a Objetos
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Bruna, sentimos sua falta!</h4>
+            <p>9d</p>
+          </div>
+          Computamos uma ausência em sua aula de UPX - Engenharia Contemporânea no dia 23/09 (Sexta-Feira). Se você acha que isso é um erro, <u>clique aqui</u>!
+        </li>
+        <li>
+          <div class="title-container">
+            <h4>Fique de olho nessa!</h4>
+            <p>20d</p>
+          </div>
+          O setor de Marketing da Facens acaba de atualizar os eventos que aconteceram por aqui no mês de Novembro!
+        </li>
+      </ul>
+    </div>
+
+    <div id="body-container">
+      <div class="historic-container">
+        <div class="img-student">
+          <img src="../../../assets/foto_bruna.png" alt="foto da aluna Bruna">
+          <div class="field-name">
+            <h3>Bruna Andressa Bragatti Antunes</h3>
+            <p class="field-ra">RA: 223835</p>
+          </div>
+        </div>
+
+        <div class="subjects">
+          <span>Web Design</span>
+          <span>Programação Orientada a Objetos</span>
+          <span>Banco de dados</span>
+          <span>Construção de Ambientes Virtuais</span>
+          <span>Inteligência de Negócios</span>
+          <span>UPX - Engenharia Contemporânea</span>
+        </div>
+
+        <div class="view-history">
+          <a href="#">Ver histórico completo</a>
+        </div>
+      </div>
+
+      <div class="faults-container">
+        <h2>Faltas</h2>
+        <div class="subjects-faults">
+          <div class="block-faults">
+            <span>Web Design</span>
+            <span class="faults">2/20</span>
+          </div>
+          <hr>
+
+          <div class="block-faults">
+            <span>Programação Orientada a Objetos</span>
+            <span class="faults">8/20</span>
+          </div>
+          <hr>
+
+          <div class="block-faults">
+            <span>Banco de dados</span>
+            <span class="faults">00/20</span>
+          </div>
+          <hr>
+
+          <div class="block-faults">
+            <span>Construção de Ambientes Virtuais</span>
+            <span class="faults">10/20</span>
+          </div>
+          <hr>
+
+          <div class="block-faults">
+            <span>Inteligência de Negócios</span>
+            <span class="faults">00/20</span>
+          </div>
+          <hr>
+
+          <div class="block-faults">
+            <span>UPX - Engenharia Contemporânea</span>
+            <span class="faults">04/20</span>
+          </div>
+          <hr>
+        </div>
+        <a href="#">Justificar ausência</a>
+      </div>
+
+      <div class="grades-container">
+        <h2>Notas</h2>
+        <table>
+          <tr>
+            <th class="nbsp">&nbsp;</th>
+            <th>AC1</th>
+            <th>AC2</th>
+            <th>AF</th>
+            <th>SUB</th>
+            <th>AG</th>
+            <th>MÉDIA</th>
+          </tr>
+          <tr>
+            <td class="materia">Web Design</td>
+            <td>10</td>
+            <td>10</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="materia">Programação Orientada a Objetos</td>
+            <td>6,88</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="materia">Banco de dados</td>
+            <td>7,59</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td class="materia">Construção de Ambientes Virtuais</td>
+            <td>5,38 </td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+
+        <a class="view-more" href="#">Ver mais </a>
+      </div>
+
+      <div class="schedule-container">
+        <h2>Agenda</h2>
+        <div class="calendar-container">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                <label id="currentMonthLabel"></label> <span style="font-size:18px" id="currentYearLabel"></span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Seg</li>
+            <li>Ter</li>
+            <li>Qua</li>
+            <li>Qui</li>
+            <li>Sex</li>
+            <li>Sab</li>
+            <li>Dom</li>
+          </ul>
+
+          <ul class="days">
+            <li><span class="not-current-month">31</span></li>
+            <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li>
+            <li><span>4</span></li>
+            <li><span>5</span></li>
+            <li><span>6</span></li>
+            <li><span>7</span></li>
+            <li><span>8</span></li>
+            <li><span>9</span></li>
+            <li><span>10</span></li>
+            <li><span>11</span></li>
+            <li><span>12</span></li>
+            <li><span>13</span></li>
+            <li><span>14</span></li>
+            <li><span>15</span></li>
+            <li><span>16</span></li>
+            <li><span>17</span></li>
+            <li><span>18</span></li>
+            <li><span>19</span></li>
+            <li><span>20</span></li>
+            <li><span>21</span></li>
+            <li><span class="active">22</span></li>
+            <li><span>23</span></li>
+            <li><span>24</span></li>
+            <li><span>25</span></li>
+            <li><span>26</span></li>
+            <li><span>27</span></li>
+            <li><span>28</span></li>
+            <li><span>29</span></li>
+            <li><span>30</span></li>
+            <li><span class="not-current-month">1</span></li>
+            <li><span class="not-current-month">2</span></li>
+            <li><span class="not-current-month">3</span></li>
+            <li><span class="not-current-month">4</span></li>
+          </ul>
+        </div>
+        <div class="messages-container">
+          <div class="container">
+            <!-- completed -->
+            <div class="step completed">
+                <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP116TIN2 - PROGRAMAÇÃO ESTRUTURADA TAREFA</p>
+                  <h3>Avaliação dos 300 - alunos que fizeram a PROVA</h3>
+                </div>
+            </div>
+
+            <!-- active -->
+            <div class="step completed">
+              <div class="v-stepper">
+                <div class="circle"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="content">
+                <p>CP410TIN3 - BANCO DE DADOS TAREFA</p>
+                <h3>AC2: Atividade Prática - Triggers</h3>
+              </div>
+            </div>
+
+            <div class="step active">
+              <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP100TIN2 - WEB DESIGN</p>
+                  <h3>AC2 - Entrega do Projeto Final</h3>
+                </div>
+            </div>
+            <div class="step">
+                <div class="v-stepper">
+                  <div class="circle"></div>
+                  <div class="line"></div>
+                </div>
+
+                <div class="content">
+                  <p>CP410TIN3 - BANCO DE DADOS TAREFA</p>
+                  <h3>AC2 - Seminários Sobre Tópicos Emergentes em Banco de Dados</h3>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="link-container">
+          <a href="#">Ver Mais</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
