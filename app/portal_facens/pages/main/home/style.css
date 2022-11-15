@@ -12,19 +12,53 @@ body {
 a {
   text-decoration: none;
   color: #005C9E;
-  display: block;
   padding: 25px 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Nav-bar */
 
-li a {
-  font-size: 20px;
+.nav-title button {
+  font-size: 17px;
+  color: #005C9E;
+  display: flex;
+  padding: 5px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 1rem;
+  padding: 1rem;
+  font-weight: bold;
 }
 
-ul {
-  list-style: none;
+#sub-title {
+  display: none;
+  margin-top: -1rem;
   display: grid;
+  padding-left: 1.5rem;
+  grid-gap: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#btn-title:active {
+  background-color: #005C9E;
+  color: #ffffff;
+}
+
+#sub-title a {
+  color: #005C9E;
+  cursor: pointer;
+  display: grid;
+  padding: 0.4rem;
+}
+
+#sub-title a:target {
+  color: black;
 }
 
 nav {
@@ -32,6 +66,12 @@ nav {
   width: 137%;
   height: 100vh;
   box-shadow: 2px 0px 4px rgb(0 0 0 / 10%);
+}
+
+.nav-title {
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 2rem;
 }
 
 .logo-container {
@@ -45,6 +85,7 @@ img {
 }
 
 .logout {
+  display: block;
   margin-top: 14rem;
   display: flex;
   justify-content: center;
@@ -52,6 +93,12 @@ img {
 
 .logout a {
   font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 89%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 /* Corpo da home */
@@ -59,10 +106,11 @@ img {
 #title-container {
   display: block;
   position: absolute;
-  left: 65%;
+  left: 60%;
   top: 15%;
   transform: translate(-50%, -50%);
   width: 79%;
+  z-index: -1;
 }
 
 h2 {
@@ -109,6 +157,7 @@ p {
 
 .historic-container a {
   text-align: center;
+  display: block;
 }
 
 .img-student {
@@ -138,13 +187,16 @@ p {
 .subjects {
   display: grid;
   grid-gap: 2rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
   margin-top: 1.5rem;
 }
 
 .subjects span {
   border-bottom: inset;
   width: 74%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* Grades de faltas */
@@ -165,6 +217,7 @@ p {
 
 .faults-container a {
   text-align: center;
+  display: block;
 }
 
 .subjects-faults {
@@ -174,6 +227,21 @@ p {
 
 .subjects-faults span {
   padding-left: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.block-faults {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-faults #faults {
+  padding-right: 2rem;
+  color: #888888;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
 }
 
 .view-history {
@@ -192,7 +260,11 @@ p {
   width: 150%;
   box-shadow: 2px 2px 5px rgb(0 0 0 / 15%);
   border-radius: 11px;
-  top: 38rem;
+  top: 39rem;
+}
+
+.grades-container a {
+  display: block;
 }
 
 table {
@@ -207,6 +279,9 @@ table {
 th {
   border: groove 1px;
   border-top: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 tr {
@@ -222,12 +297,22 @@ td {
   border: groove 1px;
   height: 3rem;
   width: 10%;
+  color: #888888;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .materia {
   border-top: none;
   border-bottom: groove 1px;
   width: 36%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  text-align: inherit;
+  padding-left: 1rem;
 }
 
 .view-more {
