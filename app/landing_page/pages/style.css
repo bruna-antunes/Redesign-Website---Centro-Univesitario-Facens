@@ -1,356 +1,72 @@
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.hero-section{
-    width: 98.8vw;
-    height: 114vh;
-    background: url('../assets/hero_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative
-}
-
-.hero-section > .title-container{
-    position: absolute;
-    left: 5vw;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.hero-section > .title-container h2{
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 92px;
-    line-height: .9;
-}
-
-.hero-section > .icon-container{
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
-
-.hero-section > .logo-container{
-    position: absolute;
-    left: 5vw;
-    top: 82%;
-    transform: translateY(-50%);
-}
-
-.media-section{
-    padding: 128px 64px;
-
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-}
-
-.media-section > .text-container{
-    width: 50%;
-}
-
-.media-section > .text-container .title-container{
-    color: var(--primary-color);
-    font-size: 28px;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    text-transform: uppercase;
-
-    position: relative;
-}
-
-.media-section > .text-container .title-container::before{
-    content: '';
-    width: 91px;
-    height: 24px;
-    background-color: var(--primary-color);
-    border-radius: 8px;
-
-    position: absolute;
-    top: -44px;
-}
-
-.media-section > .text-container .paragraph-container{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
-.media-section > .text-container .paragraph-container p{
-    margin-bottom: 44px;
-}
-
-.media-section > .text-container .paragraph-container a{
-    background-color: #1E1E1E;
-    border-radius: 8px;
-
-    cursor: pointer;
-
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    padding: 12px 24px;
-}
-
-.media-section > .media-container{
-    border-top: 4px solid #0B62E7;
-    border-bottom: 4px solid #0B62E7;
-
+.intro-section > .right-content{
     display: flex;
     align-items: center;
-
-    position: relative;
-    padding: 44px;
 }
 
-.media-section > .media-container h1{
-    transform: rotate(-90deg);
-    position: absolute;
-    left: -20%;
-
-    color: #FFFFFF;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-
-    background-color: #0B62E7;
-    border-radius: 6px;
-
-    padding: 8px 24px;
+.intro-section > .right-content img{
+    border-radius: 24px;
+    filter: drop-shadow(0px 0px 142px rgba(37, 37, 37, 0.47));
 }
 
-.cards-section > .title-container h2{
-    color: var(--primary-color);
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-
-.cards-section > .title-container span{
-    color: #1E1E1E;
-}
-
-.cards-section > .cards-container{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cards-section > .cards-container .card-item{
-    background-color: #1e1e1e;
-    border-radius: 18px;
-
-    position: relative;
-    overflow: hidden;
-
-    height: 420px;
-    width: 260px;
-
+.intro-section > .right-content .first-img-inovacao{
     z-index: 2;
 }
 
-.cards-section > .cards-container .card-item p{
-    color: #FFFFFF;
-    font-family: 'Amsi Pro Narw Ultra';
-    font-size: 24px;
-    text-transform: uppercase;
-
-    position: absolute;
-    bottom: 32px;
-
-    margin: 0 18px;
-
-    z-index: 2000;
-}
-
-.cards-section > .cards-container .card-item img{
-    height: 420px;
-    width: 260px;
-
+.intro-section > .right-content .first-img-inovacao img{
+    width: 350px;
+    height: 450px;
     object-fit: cover;
-    filter: brightness(30%);
 }
 
-.information-section{
-    padding: 128px 64px;
-    background: linear-gradient(to right, rgba(11, 98, 231, 0.7), rgba(11, 98, 231, 0.7)), url('../assets/intro_bg.jfif');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    margin-top: -48px;
-
-    color: #FFFFFF;
-
-    position: relative;
-    overflow: hidden;
+.intro-section > .right-content .second-img-inovacao img{
+    width: 250px;
+    height: 350px;
+    margin-left: -15%;
+    object-fit: cover;
+    z-index: -1;
 }
 
-.information-section > .title-container h2{
-    font-family: 'Amsi Pro Narw Ultra';
-    font-size: 32px;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    margin-bottom: 64px;
-
-    position: relative;
-}
-
-.information-section > .title-container h2::before{
-    content: '';
-    width: 91px;
-    height: 22px;
-    background-color: #fff;
-    border-radius: 8px;
-
-    position: absolute;
-    top: -44px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.information-section > .box-container{
-    display: flex;
+.box-container-inovacao{
+    display: flex; 
     justify-content: center;
-    align-items: center;
-    gap: 48px;
-    z-index: 2;
+    margin-top: 3%;
 }
 
-.information-section > .box-container .box-item{
-    border: 4px solid #FFFFFF;
-    border-radius: 4px;
-
-    padding: 32px 24px;
+.first-box{
+    width: 22vw; 
+    height: 20vh;
+    border-right: 1px solid;
+    border-color: #0B62E7;
+    text-align: center;
 }
 
-.information-section > .box-container .box-item h3{
-    font-size: 32px;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    line-height: 0;
+.second-box{
+    width: 22vw; 
+    height: 20vh;
+    border-right: 1px solid;
+    border-color: #0B62E7;
+    text-align: center;
 }
 
-.information-section > .box-container .box-item p{
-    font-family: 'AmsiPro-Bold', sans-serif;
+.third-box{
+    width: 22vw; 
+    height: 20vh;
+    text-align: center;
 }
 
-.cta-section{
-    padding: 128px 64px;
-}
-
-.cta-section > .text-container{
-    display: flex;
-    gap: 91px;
-}
-
-.cta-section > .text-container > .left-content .title-container{
-    color: #1E1E1E;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 54px;
-    text-transform: uppercase;
-}
-
-.cta-section > .text-container > .left-content .title-container span{
+.h3-box{
+    font-size: 80px; 
+    margin: 0;
     color: #0B62E7;
-}
-
-.cta-section > .text-container > .left-content .text-container{
-    color: #1E1E1E;
-    font-family: 'AmsiPro-Bold', sans-serif;
-    width: 80%;
-}
-
-.cta-section > .text-container > .right-content{
-    margin-top: -170px;
-    z-index: 3;
-}
-
-.cta-section > .text-container > .right-content .form-container{
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    border-radius: 14px;
-    box-shadow: 0px 4px 25px 12px rgba(0, 0, 0, 0.1);;
-
-    padding: 32px 24px;
-    width: 30vw;
-
-}
-
-.cta-section > .text-container > .right-content .form-container .subtitle{
-    color: #0B62E7;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 32px;
-    text-transform: uppercase;
-
-    margin-bottom: -44px;
-}
-
-.cta-section > .text-container > .right-content .form-container .first-line{
-    color: #1E1E1E;
-    font-family: 'Amsi Pro Narw Ultra', sans-serif;
-    font-size: 44px;
-    text-transform: uppercase;
-}
-
-.cta-section > .text-container > .right-content .form-container .input-item > input{
-    border: none;
-    border-bottom: 4px solid #0B62E745;
-    outline: none;
-
-    color: #0B62E745;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-
-    padding: 12px 8px;
-
-    width: 100%;
-}
-
-.cta-section > .text-container > .right-content .form-container .input-item > input:focus{
-    border-bottom: 4px solid #0B62E7;
-    color: #0B62E7;
+    font-family: sans-serif;
     font-weight: bold;
-    transition: 240ms;
 }
 
-.cta-section > .text-container > .right-content .form-container .message-container p{
-    color: #1E1E1E90;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-}
-
-.cta-section > .text-container > .right-content .form-container .button-container{
-    margin: 48px 0 24px 0;
-}
-
-.cta-section > .text-container > .right-content .form-container .button-container input{
-    background-color: #0B62E7;
-    border: none;
-    border-radius: 6px;
-
-    cursor: pointer;
-
-    color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    padding: 18px;
-
-    width: 100%;
-}
-
-.cta-section > .text-container > .right-content .form-container .button-container input:hover{
-    background-color: #0c4fb4;
-    transition: 240ms;
+.p-box{
+    font-size: 16px; 
+    margin: 0;
+    color: #0B62E7;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
 }
