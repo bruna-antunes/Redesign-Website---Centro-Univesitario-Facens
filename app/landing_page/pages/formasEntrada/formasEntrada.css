@@ -7,6 +7,15 @@ body {
     font-family: 'Amsi Pro Narw Ultra', sans-serif;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.9;
+    box-shadow: 1px 2px 5px 1px rgb(88, 86, 86);
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -109,4 +118,40 @@ h2 {
 
 button + button { 
     margin-left: 1rem;
+}
+
+#articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem 2.5rem;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.articles-container {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 8px;
+    background: #dfecfd;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3, p { 
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    color: #0B62E7;
+}
+
+a:visited {
+    color: #0B62E7;
 }
