@@ -61,7 +61,6 @@ h1 {
     position: relative;
     width: 50%;
     height: 90%;
-    border-radius: 25px;
     right: 3rem;
     z-index: -1;
 }
@@ -83,6 +82,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #0B62E7;
+    margin-bottom: 200px;
 }
 
 .center-information p + p {
@@ -91,4 +91,49 @@ h1 {
 
 .center-information + .center-information {
     border-left: 1px solid #0B62E7;
+}
+
+.container-information {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-information + .container-information {
+    margin-top: 100px;
+}
+
+.image-information-container {
+    width: 45%;
+}
+
+.image-information-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.article-information-container {
+    width: 45%;
+    color: #0B62E7;
+    padding-top: 10px;
+}
+
+.header-information-container h3 {
+    font-size: 30px;
+}
+
+.header-information-container hr {
+    width: 50%;
+    height: 4px;
+    background: #0B62E7;
+    margin-top: 20px;
+}
+
+.body-information-container {
+    margin-top: 50px;
+    text-align: justify;
+    width: 90%;
+}
+
+.right-content {
+    flex-direction: row-reverse;
 }
