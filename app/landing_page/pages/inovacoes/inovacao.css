@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amsi Pro Narw Ultra', sans-serif;
+    background: aliceblue;
+}
+
+h1 {
+    font-size: 5rem;
+    color: aliceblue;
+}
+
+.paragraph-container {
+    color: aliceblue;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.paragraph-container p {
+    font: caption;
+    line-height: 1.3;
+}
+
+#intro-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+}
+
+#intro-text-content {
+    width: 50%;
+}
+
+#images-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.img-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 150%;
+    z-index: -1;
+}
+
+#images-container img {
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#images-container img + img {
+    position: relative;
+    width: 50%;
+    height: 90%;
+    right: 3rem;
+    z-index: -1;
+}
+
+#details-section {
+    margin-top: 300px;
+}
+
+.box-container-inovacao {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.informacoes-inovacao {
+    margin-bottom: 150px;
+}
+
+.center-information {
+    font-size: 5rem;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0B62E7;
+    margin-bottom: 200px;
+}
+
+.center-information p + p {
+    font-size: 2rem;
+}
+
+.center-information + .center-information {
+    border-left: 1px solid #0B62E7;
+}
+
+.container-information {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+
+.container-information + .container-information {
+    margin-top: 100px;
+}
+
+.image-information-container {
+    width: 45%;
+}
+
+.image-information-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.article-information-container {
+    width: 45%;
+    color: #0B62E7;
+    padding-top: 10px;
+}
+
+.header-information-container h3 {
+    font-size: 30px;
+    font-family: 'Amsi Pro Narw Regular', sans-serif;
+}
+
+.header-information-container p {
+    font-family: 'Amsi Pro Narw Light', sans-serif;
+}
+
+.header-information-container hr {
+    width: 50%;
+    height: 4px;
+    background: #0B62E7;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.body-information-container {
+    margin-top: 50px;
+    text-align: justify;
+    width: 90%;
+    font-family: 'Amsi Pro Narw Regular', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.body-information-container ul{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.right-content {
+    flex-direction: row-reverse;
+}
+
+.right-content::before{ 
+    content: '';
+    width: 500px;
+    height: 550px;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 70%;
+    z-index: -1;
+    border-radius: 76% 9% 0% 43% / 49% 0% 40% 45% ;
+}
+
+.left-content-container::before {
+    content: '';
+    width: 500px;
+    height: 550px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 70%;
+    z-index: -1;
+    border-radius: 0% 43% 46% 0% / 10% 51% 46% 52%;
+}
+
+#last::before {
+    display: none;
+}
+
+#first-left::before, #second-right::before, #fourth-left::before {
+    background: #FFB200;
+}
+
+#first-right::before, #third-left::before, #fourth-right::before {
+    background: #6500C4;
+}
+
+#second-left::before, #third-rigth::before{
+    background: #0099F2;
+}
+
+#fifth-left::before {
+    background: #EA4F97;
+}
